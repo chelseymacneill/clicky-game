@@ -19,6 +19,12 @@ class App extends Component {
   }
 };
 
+// when you click on a card that image is taken out of the array
+imageClick = event => {
+  const currentImage = event.target.alt;
+  const ImageAlreadyClicked = this.state.clickedImage.indexOf(currentImage) > -1;
+}
+
 function App() {
   return (
     <div className="App">

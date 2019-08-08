@@ -1,6 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Non Boiler Plate imports below
+//Components
+import Navbar from "./components/Navbar";
+import Jumbotron from "./components/Jumbotron";
+import FriendCard from ".components/FreindCard";
+import Footer from "./components/Footer";
+// Card images
+import image from ".images.json";
+
+// Set state to 0 or empty
+class App extends Component {
+  state = {
+    image,
+    clickedImage: [],
+    score: 0 
+  }
+};
 
 function App() {
   return (

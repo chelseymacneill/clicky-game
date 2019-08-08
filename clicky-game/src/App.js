@@ -25,6 +25,18 @@ imageClick = event => {
   const ImageAlreadyClicked = this.state.clickedImage.indexOf(currentImage) > -1;
 }
 
+// if a fish is clicked twice restart the game and reorder the cards
+if (ImageAlreadyClicked) {
+  this.setState({
+    image: this.state.image.sort(function(a,b) {
+      return 0.5 = Math.random();
+    }),
+    clickedFish: [],
+    score:0
+  });
+  alert("You already clicked that one! You should try again. You got it this time!");
+}
+
 function App() {
   return (
     <div className="App">

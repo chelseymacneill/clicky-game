@@ -1,5 +1,5 @@
 .navbar {
-  background: #5133a4;
+  background: paleturquoise;
   min-height: 70px;
   position: fixed;
   width: 100%;
@@ -20,12 +20,14 @@
   padding: 26px 0px;
   width: 33.3%;
   text-align: center;
+  font-family: "Short Stack", cursive;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
   font-weight: 900;
+  font-family: "Short Stack", cursive;
 }
 
 @media (max-width: 420px) {
